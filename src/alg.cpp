@@ -19,7 +19,7 @@ int countPairs2(int *arr, int len, int value) {
       }
     }
   }
-  return k / 2;
+  return k;
 }
 int bin(int *arr, int l, int r, int x) {
   int il = l, jp = r, mid = 0; bool f = 0;
@@ -32,8 +32,8 @@ int bin(int *arr, int l, int r, int x) {
           jp = mid - 1;
       else
           il = mid + 1;
-   }
-   return 0;
+  }
+  return 0;
 }
 int countPairs3(int *arr, int len, int value) {
   int k = 0;
