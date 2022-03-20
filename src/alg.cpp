@@ -1,8 +1,8 @@
 // Copyright 2021 NNTU-CS
 int countPairs1(int *arr, int len, int value) {
   int k = 0;
-  for (i = 0; i < len; i++)
-      for (j = i + 1; j < len; j++)
+  for (int i = 0; i < len; i++)
+      for (int j = i + 1; j < len; j++)
       if (i != j)
           if ((arr[i]+arr[j]) == value)
             k++;
@@ -10,8 +10,8 @@ int countPairs1(int *arr, int len, int value) {
 }
 int countPairs2(int *arr, int len, int value) {
   int k = 0;
-  for (i = 0; i < len - 1; i++) {
-    for (j = len - 1; j > i; j--) {
+  for (int i = 0; i < len - 1; i++) {
+    for (int j = len - 1; j > i; j--) {
       if (i != j) {
         if ((arr[i]+arr[j]) == value) {
           k++;
